@@ -1,0 +1,24 @@
+.containerDetails{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+  .wrapper{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    h4,p{
+      color: aliceblue;
+      text-decoration: wavy;
+      text-shadow: azure 2px;
+    }
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

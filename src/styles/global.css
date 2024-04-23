@@ -1,5 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: url(https://images6.alphacoders.com/853/853375.png);
+  /* background-image: inherit; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

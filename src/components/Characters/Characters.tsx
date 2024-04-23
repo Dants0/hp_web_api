@@ -6,6 +6,7 @@ import axios from 'axios'
 import Image from 'next/image'
 import { CharactersInterface } from '@/interface/CharInterface'
 import { useRouter } from 'next/navigation'
+import { UserRoundPlus } from 'lucide-react'
 
 export const Characters = () => {
   
@@ -39,13 +40,13 @@ export const Characters = () => {
 
   return (
     <div className={styles.containerChar}>
-      {quantityWoman()}
+      {/* {quantityWoman()} */}
       {chars.filter(item=>item.image != "" && item.species == "human").map((char)=>(
         <div key={char.id} className={styles.cardsChar}>
           <h1>{char.actor}</h1>
           <h4>{char.name}</h4>
           <Image src={char.image} alt="Foto do personagem" width={200} height={200} />
-          <button onClick={()=>handleEnterChar(char.id)}>Detalhes</button>
+          <UserRoundPlus onClick={()=>handleEnterChar(char.id)} style={{cursor: "pointer"}}/>
         </div>
       ))}
     </div>
